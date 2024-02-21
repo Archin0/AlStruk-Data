@@ -9,6 +9,8 @@ public class Buku08 {
     int halaman, stok, harga;
 
     void tampilInformasi() {
+        System.out.println("-------------------------------");
+        System.out.println("Informasi Buku");
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: " + pengarang);
         System.out.println("Jumlah halaman: " + halaman);
@@ -31,5 +33,17 @@ public class Buku08 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    public Buku08() {
+
+    }
+
+    public Buku08(String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
     }
 }
