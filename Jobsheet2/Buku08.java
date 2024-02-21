@@ -32,8 +32,4 @@ public class Buku08 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
-
-    public static void main(String[] args) {
-        Buku b1 = new Buku();
-    }
 }
