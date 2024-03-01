@@ -11,6 +11,7 @@ public class BukuMain08 {
 
         bk1.tampilInformasi();
         bk1.terjual(5);
+        // Latihan 1
         System.out.println("Harga yang terjual: Rp"+bk1.hitungHargaTotal(5));
         System.out.println("Diskon: Rp"+bk1.hitungDiskon(5));
         System.out.println("Harga Bayar: Rp"+bk1.hitungHargaBayar(5));

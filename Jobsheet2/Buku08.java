@@ -32,10 +32,12 @@ public class Buku08 {
         harga = hrg;
     }
 
+    // Latihan 1
     int hitungHargaTotal(int jml) {
         return harga*jml;
     }
 
+    // Latihan 1
     int hitungDiskon(int jml) {
         int diskon = 0;
         int hargaTotal = hitungHargaTotal(jml);
@@ -47,6 +49,7 @@ public class Buku08 {
         return diskon;
     }
 
+    // Latihan 1
     int hitungHargaBayar(int jml) {
         int hargaBayar = hitungHargaTotal(jml) - hitungDiskon(jml);
         return hargaBayar;
