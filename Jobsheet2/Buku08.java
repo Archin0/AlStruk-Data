@@ -1,8 +1,5 @@
 package Jobsheet2;
 
-/**
- * Buku08
- */
 public class Buku08 {
 
     String judul, pengarang;
