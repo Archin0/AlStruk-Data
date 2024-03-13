@@ -138,17 +138,17 @@ public class Mobil {
                     System.out.println("Biaya Perawatan Rata-Rata dari Mobil Tahun Produksi >2010: Rp"+biayaRata);
                     break;
                 case 2:
-                Mobil biayaTotalTerbesar = cars[0];
-                for(int j = 1; j < cars.length; j++) {
-                    if (cars[j].cc > 1500 && cars[j].thnProduksi < 2010) {
-                        if(cars[j].hitungBiayaTotal() > biayaTotalTerbesar.hitungBiayaTotal()) {
-                            biayaTotalTerbesar = cars[j];
+                    Mobil biayaTotalTerbesar = cars[0];
+                    for(int j = 1; j < cars.length; j++) {
+                        if (cars[j].cc > 1500 && cars[j].thnProduksi < 2010) {
+                            if(cars[j].hitungBiayaTotal() > biayaTotalTerbesar.hitungBiayaTotal()) {
+                                biayaTotalTerbesar = cars[j];
+                            }
                         }
                     }
-                }
-                System.out.println("Mobil cc >1500 dan Tahun Produksi <2010 dengan Biaya Total Terbesar: ");
-                biayaTotalTerbesar.printData();
-                System.out.println("Dengan biaya total sebesar: "+biayaTotalTerbesar.hitungBiayaTotal());
+                    System.out.println("Mobil cc >1500 dan Tahun Produksi <2010 dengan Biaya Total Terbesar: ");
+                    biayaTotalTerbesar.printData();
+                    System.out.println("Dengan biaya total sebesar: Rp"+ String.format("%.0f", biayaTotalTerbesar.hitungBiayaTotal()));
                     break;
             }
         } while (pilihan != 0 && pilihan>2);
