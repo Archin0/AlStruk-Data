@@ -26,7 +26,7 @@ public class MainHotel {
         list.selectionHarga();
         list.tampilAll();
 
-        System.out.println("Daftar Penginapan setelah Sorting Rating BIntang dari yang Tertinggi ke Terendah");
+        System.out.println("Daftar Penginapan setelah Sorting Rating Bintang dari yang Tertinggi ke Terendah");
         System.out.println("Metode Bubble Sort");
         list.bubbleRating();
         list.tampilAll();
