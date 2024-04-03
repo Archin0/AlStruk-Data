@@ -1,4 +1,4 @@
-package Jobsheet7;
+package Jobsheet7.StringSearching;
 
 public class PencarianBuku08 {
     Buku08 listBk[] = new Buku08[5];
@@ -15,9 +15,7 @@ public class PencarianBuku08 {
 
     public void tampil() {
         for(Buku08 m : listBk) {
-            if (m != null) {
                 m.tampilDataBuku();
-            }
         }
     }
 
