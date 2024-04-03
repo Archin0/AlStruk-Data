@@ -1,4 +1,4 @@
-package Jobsheet7;
+package Jobsheet7.StringSearching;
 
 import java.util.Scanner;
 
@@ -37,23 +37,21 @@ public class BukuMain08 {
         System.out.println("-Masukkan kode buku yang dicari-");
         System.out.print("Kode Buku : ");
         String cari = s1.nextLine();
+
         System.out.println("==================================");
         System.out.println("menggunakan Sequential Search");
-        int posisi = data.FindSeqSearch(cari);
-        data.Tampilposisi(cari, posisi);
-        data.TampilData(cari, posisi);
-
-        s.close();
-        s1.close();
-
-        Buku08 dataBuku = data.findBuku(cari);
-        dataBuku.tampilDataBuku();
+        int posisiSeq = data.FindSeqSearch(cari);
+        data.Tampilposisi(cari, posisiSeq);
+        data.TampilData(cari, posisiSeq);
 
         System.out.println("=================================");
         System.out.println("menggunakan Binary Search");
-        posisi = data.FindBinarySearch(cari, 0, jumBuku-1);
-        data.Tampilposisi(cari, posisi);
-        data.TampilData(cari, posisi);
+        int posisiBin = data.FindBinarySearch(cari, 0, jumBuku-1);
+        data.Tampilposisi(cari, posisiBin);
+        data.TampilData(cari, posisiBin);
+
+        s.close();
+        s1.close();
     }
     
 }
